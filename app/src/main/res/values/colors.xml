@@ -7,13 +7,9 @@
     <color
         name="colorAccent">#ffffff</color>
     <color
-        name="colorIdentity">#ee5555</color>
+        name="colorIdentity">#F86262</color>
     <color
         name="colorILight">#FF9696</color>
-    <color
-        name="tabSelectedIconColor">#ee5555</color>
-    <color
-        name="tabUnselectedIconColor">#ee5555</color>
 
     <color
         name="colorDisabled">#DFDFE0</color>
