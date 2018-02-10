@@ -9,6 +9,8 @@ public class ResponseModel
         private boolean result;
         private int id;
 
+        public ResponseModel() { }
+
         public boolean isResult() {
                 return result;
         }
