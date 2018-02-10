@@ -11,7 +11,7 @@
         <item
             name="colorPrimaryDark">@color/colorPrimaryDark
         </item>
-        <item name="colorControlNormal">@color/accent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
         <item
             name="colorAccent">@color/colorAccent
         </item>
@@ -38,10 +38,10 @@
 
 
     <style name="ActionBar" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/accent</item>
+        <item name="android:background">@color/colorAccent</item>
 
         <!-- Support library compatibility -->
-        <item name="background">@color/accent</item>
+        <item name="background">@color/colorAccent</item>
     </style>
 
     <style
@@ -63,7 +63,7 @@
         parent="ThemeOverlay.AppCompat.Light"/>
 
     <style name="custom_toolbar" parent="@style/Widget.AppCompat.Toolbar">
-        <item name="titleTextColor">@color/primary_dark</item>
+        <item name="titleTextColor">@color/colorPrimaryDark</item>
     </style>
 
 
