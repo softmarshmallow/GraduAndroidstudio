@@ -57,7 +57,7 @@
                 android:layout_height="75dp"
                 android:layout_gravity="bottom"
                 android:orientation="horizontal"
-                android:background="@drawable/back3">
+                android:background="@drawable/outline">
 
                 <TextView
                     android:id="@+id/textView27"
@@ -71,7 +71,7 @@
                     android:gravity="center"
                     android:text="3개 학교주인"
                     android:textColor="#ffffff"
-                    android:background="@drawable/back3"/>
+                    android:background="@drawable/outline"/>
 
                 <TextView
                     android:id="@+id/textView26"
@@ -85,7 +85,7 @@
                     android:gravity="center"
                     android:text="12개 졸업장"
                     android:textColor="#ffffff"
-                    android:background="@drawable/back3"
+                    android:background="@drawable/outline"
                     />
 
                 <TextView
@@ -100,7 +100,7 @@
                     android:gravity="center"
                     android:text="108개 졸업모"
                     android:textColor="#ffffff"
-                    android:background="@drawable/back3"/>
+                    android:background="@drawable/outline"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 

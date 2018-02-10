@@ -18,7 +18,7 @@
             android:layout_width="190dp"
             android:layout_height="145dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/b"
+            android:src="@drawable/test_b"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.052"

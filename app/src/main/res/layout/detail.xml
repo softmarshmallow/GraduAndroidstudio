@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:layout_marginTop="130dp"
-            android:background="@drawable/back3"
+            android:background="@drawable/outline"
             android:orientation="horizontal">
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/back3"
+                android:background="@drawable/outline"
                 android:gravity="center"
                 android:text="2014명 재학중"
                 android:textColor="#040404" />
@@ -78,7 +78,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/back3"
+                android:background="@drawable/outline"
                 android:gravity="center"
                 android:text="3012명 졸업"
                 android:textColor="#040404" />
@@ -92,7 +92,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/back3"
+                android:background="@drawable/outline"
                 android:gravity="center"
                 android:text="20 학사모 보상"
                 android:textColor="#040404" />
@@ -108,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/a" />
+        app:srcCompat="@drawable/test_a" />
 
     <TextView
         android:id="@+id/textView29"

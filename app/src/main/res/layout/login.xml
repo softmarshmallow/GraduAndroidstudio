@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="568dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/bg"
+        app:srcCompat="@drawable/login_bg"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-1dp" />
     <ImageView
@@ -34,7 +34,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/back"
+        android:background="@drawable/button_bg_line"
         android:gravity="center"
         android:textColor="#ffffff"
         android:textSize="23sp"
@@ -53,7 +53,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/back2"
+        android:background="@drawable/button_bg_filled"
         android:gravity="center"
         android:textColor="#ee5555"
         android:textSize="23sp"
