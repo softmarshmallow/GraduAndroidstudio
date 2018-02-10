@@ -72,8 +72,7 @@ dependencies {
 
     // Retrofit
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
-
-
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
