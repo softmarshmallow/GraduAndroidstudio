@@ -15,6 +15,7 @@
         android:layout_marginTop="27dp"
         android:gravity="center"
         android:text="TextView"
+        android:textAlignment="viewStart"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +23,7 @@
         app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.082"/>
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -41,14 +42,14 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="17dp"
+        android:layout_height="16dp"
         android:text="프로필 보기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234" />
+        app:layout_constraintVertical_bias="0.214"/>
 
     <LinearLayout
         android:layout_width="338dp"
@@ -58,7 +59,6 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.953">
@@ -66,8 +66,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView_1"
@@ -75,7 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="설정" />
+                android:text="설정"/>
 
             <ImageView
                 android:id="@+id/imageView_1"
@@ -84,14 +84,14 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:tint="#545254"
-                app:srcCompat="@drawable/question" />
+                app:srcCompat="@drawable/question"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView_2"
@@ -99,7 +99,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="도움말" />
+                android:text="도움말"/>
 
             <ImageView
                 android:id="@+id/imageView_2"
@@ -108,14 +108,14 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:tint="#545254"
-                app:srcCompat="@drawable/settings" />
+                app:srcCompat="@drawable/settings"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView_3"
@@ -123,15 +123,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="버그 보고 and 피드백" />
+                android:text="버그 보고 and 피드백"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView_4"
@@ -139,7 +139,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="개발자 정보" />
+                android:text="개발자 정보"/>
 
         </LinearLayout>
 

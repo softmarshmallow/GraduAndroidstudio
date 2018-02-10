@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/login_bg"
+        />
+
+    <ImageView
+        android:id="@+id/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_bg_red"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="142dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="18dp"
+        app:fb_defaultColor="@color/textWhite"
+        app:fb_focusColor="@color/colorPrimaryDark"
+        app:fb_radius="36dp"
+        app:fb_text="LOG IN"
+        app:fb_textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="108dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="18dp"
+        app:fb_borderColor="#FFFFFF"
+        app:fb_borderWidth="3dp"
+        app:fb_defaultColor="@color/float_transparent"
+        app:fb_focusColor="@color/colorPrimaryDark"
+        app:fb_radius="36dp"
+        app:fb_text="SIGN UP"
+        app:fb_textColor="@color/textWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -6,66 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<ImageView
+    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/login_bg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
 
         />
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/login_bg_white"
-        tools:layout_editor_absoluteX="364dp"
-        tools:layout_editor_absoluteY="30dp"
-
         />
+
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/cancel_button"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/gradient"
         app:layout_constraintVertical_bias="0.039"
         app:srcCompat="@drawable/x" />
+
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="96dp"
         android:text="LOGIN"
         android:textColor="#ffffff"
         android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/emailEditText"
         android:layout_width="343dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -77,7 +69,7 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintVertical_bias="0.458"/>
 
     <TextView
         android:id="@+id/textView16"
@@ -98,9 +90,9 @@
         app:layout_constraintVertical_bias="0.402" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/passwordEditText"
         android:layout_width="343dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -112,7 +104,7 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintVertical_bias="0.639"/>
 
     <TextView
         android:id="@+id/textView17"
@@ -132,40 +124,19 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.582" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="309dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/button_bg_filled"
-        android:gravity="center"
-        android:textColor="#ee5555"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765"
-        tools:text="LOG IN" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="336dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="76dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846">
+        >
 
         <View
             android:id="@+id/textView20"
@@ -173,7 +144,7 @@
             android:layout_height="1dp"
             android:layout_gravity="center"
             android:background="@color/viewBg"
-            android:gravity="center" />
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/textView21"
@@ -183,7 +154,7 @@
             android:gravity="center"
             android:text="or"
             android:textColor="#f4f4f4"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <View
             android:id="@+id/textView22"
@@ -191,39 +162,45 @@
             android:layout_height="1dp"
             android:layout_gravity="center"
             android:background="@color/viewBg"
-            android:gravity="center" />
+            android:gravity="center"/>
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="124dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:textSize="18dp"
+        app:fb_defaultColor="@color/textWhite"
+        app:fb_focusColor="@color/colorPrimaryDark"
+        app:fb_radius="36dp"
+        app:fb_text="LOG IN"
+        app:fb_textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958"
-        app:srcCompat="@drawable/facebook" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/fb_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.287"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958"
-        app:srcCompat="@drawable/google" />
+        app:srcCompat="@drawable/facebook"/>
+
+    <ImageView
+        android:id="@+id/google_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="96dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/google"/>
 
 </android.support.constraint.ConstraintLayout>

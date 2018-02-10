@@ -12,6 +12,11 @@
         name="colorILight">#FF9696</color>
 
     <color
+        name="tabSelectedIconColor">#ee5555</color>
+    <color
+        name="tabUnselectedIconColor">#ee5555</color>
+
+    <color
         name="colorDisabled">#DFDFE0</color>
     <color
         name="viewBg">#ffffff</color>

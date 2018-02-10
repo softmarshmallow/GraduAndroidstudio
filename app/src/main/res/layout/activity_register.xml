@@ -49,9 +49,9 @@
         app:layout_constraintVertical_bias="0.24" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/emailEditText"
         android:layout_width="343dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -84,9 +84,9 @@
         app:layout_constraintVertical_bias="0.402" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/passwordEditText"
         android:layout_width="343dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -101,7 +101,7 @@
         app:layout_constraintVertical_bias="0.639" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/passwordTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -118,25 +118,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.582" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="309dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/button_bg_filled"
-        android:gravity="center"
-        android:textColor="#ee5555"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765"
-        tools:text="RESISTER" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -181,39 +163,27 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/fb_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958"
-        app:srcCompat="@drawable/facebook" />
+        app:srcCompat="@drawable/facebook"/>
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/google_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="88dp"
         app:layout_constraintBottom_toBottomOf="@+id/gradient"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.287"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958"
-        app:srcCompat="@drawable/google" />
+        app:srcCompat="@drawable/google"/>
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/cancel_button"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
@@ -227,5 +197,26 @@
         app:layout_constraintTop_toTopOf="@+id/gradient"
         app:layout_constraintVertical_bias="0.039"
         app:srcCompat="@drawable/x" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="124dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="18dp"
+        app:fb_defaultColor="@color/textWhite"
+        app:fb_focusColor="@color/colorPrimaryDark"
+        app:fb_radius="36dp"
+        app:fb_text="SIGN UP"
+        app:fb_textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
 
 </android.support.constraint.ConstraintLayout>
