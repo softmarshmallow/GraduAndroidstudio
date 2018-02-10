@@ -10,11 +10,7 @@ public class DiplomaModel
         private String photoUrl;
         private String date;
 
-        public DiplomaModel(String name, String photoUrl, String date) {
-                this.name = name;
-                this.photoUrl = photoUrl;
-                this.date = date;
-        }
+        public DiplomaModel() { }
 
         public String getName() {
                 return name;

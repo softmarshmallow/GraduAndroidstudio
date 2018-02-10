@@ -11,10 +11,7 @@ public class StatModel
         private int caps;
         private List<DiplomaModel> diplomas;
 
-        public StatModel(int caps, List<DiplomaModel> diplomas) {
-                this.caps = caps;
-                this.diplomas = diplomas;
-        }
+        public StatModel() { }
 
         public int getCaps() {
                 return caps;

@@ -11,12 +11,7 @@ public class GoalModel
         private int caps;
         private boolean done;
 
-        public GoalModel(String name, String description, int caps, boolean done) {
-                this.name = name;
-                this.description = description;
-                this.caps = caps;
-                this.done = done;
-        }
+        public GoalModel() { }
 
         public String getName() {
                 return name;

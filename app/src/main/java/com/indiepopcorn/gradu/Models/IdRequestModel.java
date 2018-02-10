@@ -9,6 +9,10 @@ public class IdRequestModel
         private int schoolId;
         private int goalId;
 
+        public IdRequestModel(int schoolId) {
+                this.schoolId = schoolId;
+        }
+
         public IdRequestModel(int schoolId, int goalId) {
                 this.schoolId = schoolId;
                 this.goalId = goalId;
