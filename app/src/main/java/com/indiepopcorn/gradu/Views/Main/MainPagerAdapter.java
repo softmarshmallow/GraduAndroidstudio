@@ -5,6 +5,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.util.Log;
 
+import com.indiepopcorn.gradu.Views.HomeTab.HomeTabFragment;
+import com.indiepopcorn.gradu.Views.MoreTab.MoreTabFragment;
+import com.indiepopcorn.gradu.Views.MypageTab.MypageTabFragment;
+import com.indiepopcorn.gradu.Views.SearchTab.SearchTabFragment;
+
 public class MainPagerAdapter extends FragmentStatePagerAdapter
 {
 
@@ -20,10 +25,10 @@ public class MainPagerAdapter extends FragmentStatePagerAdapter
                 return MainTabsType.values().length;
         }
         
-        Fragment homeTabFragment = new Fragment();
-        Fragment searchTabFragment = new  Fragment();
-        Fragment mypageFragment = new  Fragment();
-        Fragment moreTabFragment = new  Fragment();
+        Fragment homeTabFragment = new HomeTabFragment();
+        Fragment searchTabFragment = new SearchTabFragment();
+        Fragment mypageFragment = new MypageTabFragment();
+        Fragment moreTabFragment = new MoreTabFragment();
 
 
         @Override

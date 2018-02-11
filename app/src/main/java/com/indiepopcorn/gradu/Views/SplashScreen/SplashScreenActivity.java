@@ -3,6 +3,7 @@ package com.indiepopcorn.gradu.Views.SplashScreen;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -14,8 +15,6 @@ import com.indiepopcorn.gradu.Networking.LoginService;
 import com.indiepopcorn.gradu.R;
 import com.indiepopcorn.gradu.Views.Login.LoginLandingpageActivity;
 import com.indiepopcorn.gradu.Views.Main.MainTabControllerActivity;
-
-import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class SplashScreenActivity extends AppCompatActivity
 {
@@ -59,9 +58,15 @@ public class SplashScreenActivity extends AppCompatActivity
                 handler.postDelayed(r , delayMilliSeconds);
                 
         }
+
+
+        boolean skipLogin = true;
         void MoveToNextActivity() {
-                
-                
+                if (skipLogin){
+                        MoveToMainActivity();
+                        return;
+                }
+
                 if (LoginPreferences.getIsLoggedIn()) {
                         MoveToMainAfterAutoLogin();
                 } else {
@@ -73,9 +78,10 @@ public class SplashScreenActivity extends AppCompatActivity
         
         
         void MoveToMainAfterAutoLogin(){
-                final SweetAlertDialog autoLoginProgressDialog;
-                autoLoginProgressDialog = new SweetAlertDialog(SplashScreenActivity.this, SweetAlertDialog.PROGRESS_TYPE)
-                        .setTitleText("로그인중...");
+                final AlertDialog autoLoginProgressDialog;
+                autoLoginProgressDialog = new AlertDialog.Builder(this).create();
+                autoLoginProgressDialog.setTitle("로그인중");
+                autoLoginProgressDialog.setMessage("Alert message to be shown");
                 autoLoginProgressDialog.setCancelable(false);
                 autoLoginProgressDialog.show();
                 
@@ -88,31 +94,9 @@ public class SplashScreenActivity extends AppCompatActivity
                                 if (task.getException() == null){
                                         MoveToMainActivity();
                                 }else {
-                                        SweetAlertDialog errorDialog = new SweetAlertDialog(SplashScreenActivity.this, SweetAlertDialog.ERROR_TYPE)
-                                                .setTitleText("로그인 오류!")
-                                                .setContentText(task.getException().getLocalizedMessage())
-                                                
-                                                .setConfirmText("오프라인으로 계속")
-                                                .setConfirmClickListener(
-                                                        new SweetAlertDialog.OnSweetClickListener()
-                                                        {
-                                                                @Override
-                                                                public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                                                        sweetAlertDialog.dismiss();
-                                                                        MoveToMainActivity();
-                                                                }
-                                                        })
-                                                
-                                                .setCancelText("재시도")
-                                                .setCancelClickListener(
-                                                        new SweetAlertDialog.OnSweetClickListener()
-                                                        {
-                                                                @Override
-                                                                public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                                                        sweetAlertDialog.dismiss();
-                                                                        MoveToMainAfterAutoLogin();
-                                                                }
-                                                        });
+                                        AlertDialog errorDialog = new AlertDialog.Builder(SplashScreenActivity.this).create();
+                                        errorDialog.setTitle("로그인 오류!");
+                                        errorDialog.setMessage(task.getException().getLocalizedMessage());
                                         errorDialog.setCancelable(false);
                                         errorDialog.show();
                                 }

@@ -1,13 +1,16 @@
 package com.indiepopcorn.gradu.Views.Main;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.os.Message;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -24,7 +27,6 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cn.pedant.SweetAlert.SweetAlertDialog;
 import devlight.io.library.ntb.NavigationTabBar;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -61,7 +63,7 @@ public class MainTabControllerActivity extends AppCompatActivity
                 final ArrayList<NavigationTabBar.Model> models = new ArrayList<>();
                 models.add(
                         new NavigationTabBar.Model.Builder(
-                                getResources().getDrawable(R.drawable.border),
+                                getResources().getDrawable(R.drawable.icon),
                                 Color.parseColor(colors[0]))
                                 .title("Home")
                                 .badgeTitle("New")
@@ -69,7 +71,7 @@ public class MainTabControllerActivity extends AppCompatActivity
                 );
                 models.add(
                         new NavigationTabBar.Model.Builder(
-                                getResources().getDrawable(R.drawable.border),
+                                getResources().getDrawable(R.drawable.icon),
                                 Color.parseColor(colors[0]))
                                 
                                 .title("Search")
@@ -79,7 +81,7 @@ public class MainTabControllerActivity extends AppCompatActivity
                 models.add(
                         
                         new NavigationTabBar.Model.Builder(
-                                getResources().getDrawable(R.drawable.border),
+                                getResources().getDrawable(R.drawable.icon),
                                 Color.parseColor(colors[0]))
                                 .title("프로필")
                                 // .badgeTitle("state")
@@ -87,7 +89,7 @@ public class MainTabControllerActivity extends AppCompatActivity
                 );
                 models.add(
                         new NavigationTabBar.Model.Builder(
-                                getResources().getDrawable(R.drawable.border),
+                                getResources().getDrawable(R.drawable.icon),
                                 Color.parseColor(colors[0]))
 //                        .selectedIcon(getResources().getDrawable(R.drawable.ic_eighth))
                                 .title("더보기")
@@ -182,25 +184,26 @@ public class MainTabControllerActivity extends AppCompatActivity
         }
         
         void AskIfQuitApp(){
-                new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
-                        .setTitleText(getString(R.string.quit_app_title))
-                        .setContentText(getString(R.string.quit_app_content))
-                        .setCancelText(getString(R.string.quit_app_cancel))
-                        .setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                AlertDialog alert = new AlertDialog.Builder(this).create();
+                alert.setTitle(getString(R.string.quit_app_title));
+                alert.setMessage(getString(R.string.quit_app_content));
+//                alert.setCancelMessage(new Message().setR.string.quit_app_cancel);
+                alert.setOnCancelListener(new DialogInterface.OnCancelListener() {
                                 @Override
-                                public void onClick(SweetAlertDialog sDialog) {
-                                        sDialog.cancel();
+                                public void onCancel(DialogInterface dialogInterface) {
+                                        dialogInterface.cancel();
                                 }
-                        })
+                        });
                         
-                        .setConfirmText(getString(R.string.quit_app_confirm))
+                        /*.setConfirmText(getString(R.string.quit_app_confirm))
                         .setConfirmClickListener (new SweetAlertDialog.OnSweetClickListener() {
                                 @Override
                                 public void onClick(SweetAlertDialog sDialog) {
                                         sDialog.dismissWithAnimation();
                                         finish();
                                 }
-                        }).show();
+                        })*/
+                alert.show();
         }
         
         @Override

@@ -70,7 +70,7 @@
         android:textSize="18dp"
         app:fb_borderColor="#FFFFFF"
         app:fb_borderWidth="3dp"
-        app:fb_defaultColor="@color/float_transparent"
+        app:fb_defaultColor="#00000000"
         app:fb_focusColor="@color/colorPrimaryDark"
         app:fb_radius="36dp"
         app:fb_text="SIGN UP"
