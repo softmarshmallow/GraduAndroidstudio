@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "166978433057",
+    "firebase_url": "https://gradu-74b41.firebaseio.com",
+    "project_id": "gradu-74b41",
+    "storage_bucket": "gradu-74b41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166978433057:android:fd76eff51c085cab",
+        "android_client_info": {
+          "package_name": "com.indiepopcorn.gradu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166978433057-k41gnbm8a20d3umaibj7j1sf8u5uhlt3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.indiepopcorn.gradu",
+            "certificate_hash": "af536aa86d1db946b6f769d54a0200703b2715ac"
+          }
+        },
+        {
+          "client_id": "166978433057-80pcq117c1ai9k5bfknt29i8tto26ss9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRLZP2eVeVChh9EsqDIL7uUJ3Ahg2Zgdc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166978433057-80pcq117c1ai9k5bfknt29i8tto26ss9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
